@@ -2,7 +2,7 @@ package edu.wzm.structure.decorator.template;
 
 import java.util.Objects;
 
-public class Decorator implements Component {
+public abstract class Decorator implements Component {
 
     protected Component component;
 
