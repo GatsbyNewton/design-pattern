@@ -8,6 +8,7 @@ public class Main {
         add.setNumB(3);
         System.out.println("Add: " + add.getResult());
 
+
         Factory subFactory = new SubFactory();
         Operator sub = subFactory.createOperator();
         sub.setNumA(1);
