@@ -3,15 +3,15 @@
 模式分类：
 - 创建型
     1. 单例模式
-    2. 简单工厂模式
-    3. 工厂方法模式
+    2. [简单工厂模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/simple_factory)
+    3. [工厂方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/factory_method)
     4. 抽象工厂模式
     5. 建造者模式
     6. 原型模式
 - 结构型
-    1. 代理模式
+    1. [代理模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/proxy)
     2. 适配器模型
-    3. 装饰器模式
+    3. [装饰器模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/decorator)
     4. 桥接模式
     5. 组合模式
     6. 享元模式
@@ -25,7 +25,7 @@
     6. 解释器模式
     7. 中介者模式
     8. 访问者模式
-    9. 策略模式
+    9. [策略模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/actor/strategy)
     10. 备忘录模式
     11. 迭代器模式
 
@@ -35,7 +35,7 @@
 ### 工厂方法模式
 **工厂方法模式（Factory Method）**：定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类。
 
-工厂方法模式 vs 简单工厂模式
+工厂方法模式 vs 简单工厂模式：
 - 简单工厂模式的最大优点在于工厂类中包含了必要的逻辑判断，根据客户端的选择条件动态实例化相关的类，对于客户端来说，去除了与具体产品的依赖。
 - 工厂方法模式实现时，客户端需要决定实例化哪一个工厂来实现运算类，选择判断的问题还是存在的，也就是说，工厂方法把简单工厂的内部逻辑判断移到了客户端代码来进行。
 
