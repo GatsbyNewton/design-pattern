@@ -1,6 +1,6 @@
-package edu.wzm.creator.prototype.shallow;
+package edu.wzm.creator.prototype.deep;
 
-public class Experience {
+public class Experience implements Cloneable{
     private String date;
     private String company;
 
@@ -23,5 +23,17 @@ public class Experience {
 
     public void setCompany(String company) {
         this.company = company;
+    }
+
+    @Override
+    protected Experience clone() throws CloneNotSupportedException {
+        Experience experience = null;
+        try {
+            experience = (Experience) super.clone();
+        }catch (CloneNotSupportedException cnse){
+            throw new RuntimeException();
+        }
+
+        return experience;
     }
 }
