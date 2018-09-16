@@ -23,6 +23,10 @@ public abstract class CaffeineBeverageWithHook {
         System.out.println("Pouring into cup");
     }
 
+    /**
+     * 钩子方法
+     * @return
+     */
     protected boolean customerWantsCondiments(){
         return true;
     }
