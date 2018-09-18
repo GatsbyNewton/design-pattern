@@ -1,4 +1,4 @@
-package edu.wzm.actor.template_method.template;
+package edu.wzm.action.template_method.template;
 
 public abstract class AbstractClass {
 
