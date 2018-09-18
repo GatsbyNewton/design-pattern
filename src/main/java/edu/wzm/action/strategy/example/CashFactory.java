@@ -1,4 +1,4 @@
-package edu.wzm.actor.strategy.example;
+package edu.wzm.action.strategy.example;
 
 public class CashFactory {
     private String type;
