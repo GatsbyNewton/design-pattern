@@ -1,4 +1,4 @@
-package edu.wzm.actor.strategy.template;
+package edu.wzm.action.strategy.template;
 
 public interface Strategy {
 
