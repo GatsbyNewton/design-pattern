@@ -1,4 +1,4 @@
-package edu.wzm.actor.observer.template;
+package edu.wzm.action.observer.template;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package edu.wzm.actor.observer.template;
+package edu.wzm.action.observer.template;
 
 public interface Observer {
 
