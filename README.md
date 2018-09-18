@@ -6,7 +6,7 @@
     2. [简单工厂模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/simple_factory)
     3. [工厂方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/factory_method)
     4. 抽象工厂模式
-    5. 建造者模式
+    5. [建造者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/builder)
     6. [原型模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/prototype)
 - 结构型
     1. [代理模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/proxy)
@@ -15,7 +15,7 @@
     4. 桥接模式
     5. 组合模式
     6. 享元模式
-    7. 外观模式
+    7. [外观模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/facade)
 - 行为型
     1. 观察者模式
     2. [模板方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/actor/template_method)
@@ -42,6 +42,9 @@
 ### 原型模式
 **原型模式（Prototype Pattern）**：用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。换言之，原型模式其实就是从一个对象再创建另外一个可定制的对象，而且不需要知道任何创建的细节。
 
+### 建造者模式
+**建造者模式（Builder Pattern）**：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。建造者模式主要是用于创建一些复杂的对象，这些对象内部构件间的建造顺序通常是稳定的，但是对象内部的构建通常面临着复杂的变化。
+
 ## 3. 结构型
 ### 1. 代理模式
 **代理模式（Proxy Pattern）** 一般分为几种：
@@ -49,6 +52,9 @@
 2. **虚拟代理**：是根据需要创建开销很大的对象。通过它来存放实例化需要很长时间的真实对象。
 3. **安全代理**：用来控制真实对象访问时的权限。
 4. **智能指引**：是指当调用真实的对象时，代理处理另外一些事。
+
+### 外观模式
+**外观模式（Facade Pattern）**：提供了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。
 
 ## 4. 行为型
 ### 策略模式
