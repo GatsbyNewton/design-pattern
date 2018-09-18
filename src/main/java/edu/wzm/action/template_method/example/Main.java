@@ -1,4 +1,4 @@
-package edu.wzm.actor.template_method.example;
+package edu.wzm.action.template_method.example;
 
 public class Main {
     public static void main(String[] args){

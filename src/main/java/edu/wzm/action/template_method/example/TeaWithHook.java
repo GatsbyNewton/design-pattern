@@ -1,4 +1,4 @@
-package edu.wzm.actor.template_method.example;
+package edu.wzm.action.template_method.example;
 
 import java.util.Objects;
 
