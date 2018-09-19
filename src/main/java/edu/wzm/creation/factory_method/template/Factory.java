@@ -1,4 +1,4 @@
-package edu.wzm.create.factory_method.template;
+package edu.wzm.creation.factory_method.template;
 
 public interface Factory {
 
