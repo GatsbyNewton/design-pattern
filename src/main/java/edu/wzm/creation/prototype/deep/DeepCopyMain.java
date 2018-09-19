@@ -1,4 +1,4 @@
-package edu.wzm.create.prototype.deep;
+package edu.wzm.creation.prototype.deep;
 
 public class DeepCopyMain {
     public static void main(String[] args)throws Exception{
