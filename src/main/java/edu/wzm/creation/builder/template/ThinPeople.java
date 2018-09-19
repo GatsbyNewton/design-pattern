@@ -1,4 +1,4 @@
-package edu.wzm.create.builder.template;
+package edu.wzm.creation.builder.template;
 
 public class ThinPeople implements PeopleBuilder{
     private String head;

@@ -1,4 +1,4 @@
-package edu.wzm.create.builder.template;
+package edu.wzm.creation.builder.template;
 
 public class Main {
     public static void main(String[] args){

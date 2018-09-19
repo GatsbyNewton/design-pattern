@@ -1,4 +1,4 @@
-package edu.wzm.create.builder.template;
+package edu.wzm.creation.builder.template;
 
 public interface PeopleBuilder {
 
