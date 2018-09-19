@@ -3,11 +3,11 @@
 模式分类：
 - 创建型
     1. 单例模式
-    2. [简单工厂模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/simple_factory)
-    3. [工厂方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/factory_method)
+    2. [简单工厂模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creation/simple_factory)
+    3. [工厂方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creation/factory_method)
     4. 抽象工厂模式
-    5. [建造者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/builder)
-    6. [原型模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creator/prototype)
+    5. [建造者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creation/builder)
+    6. [原型模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creation/prototype)
 - 结构型
     1. [代理模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/proxy)
     2. 适配器模型
@@ -17,15 +17,15 @@
     6. 享元模式
     7. [外观模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/facade)
 - 行为型
-    1. 观察者模式
-    2. [模板方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/actor/template_method)
+    1. [观察者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/observer)
+    2. [模板方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/template_method)
     3. 命令模式
     4. 状态模式
     5. 职责链模式
     6. 解释器模式
     7. 中介者模式
     8. 访问者模式
-    9. [策略模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/actor/strategy)
+    9. [策略模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/strategy)
     10. 备忘录模式
     11. 迭代器模式
 
@@ -71,5 +71,6 @@
 对算法有更多的控制权，而且不会重复代码，效率可能更高 | 采用委托模型，使用对象组合，所以更有弹性
 依赖程度更高 | 依赖程度低
   
-
+### 观察者模式
+**观察者模式（Observer Pattern）**：也叫**发布-订阅模式（Publish/Subscribe Pattern）**，定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并自动更新。
 
