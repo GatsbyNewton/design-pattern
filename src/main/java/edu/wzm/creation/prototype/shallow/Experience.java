@@ -1,4 +1,4 @@
-package edu.wzm.create.prototype.shallow;
+package edu.wzm.creation.prototype.shallow;
 
 public class Experience {
     private String date;

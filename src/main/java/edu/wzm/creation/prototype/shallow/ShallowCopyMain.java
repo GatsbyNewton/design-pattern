@@ -1,4 +1,4 @@
-package edu.wzm.create.prototype.shallow;
+package edu.wzm.creation.prototype.shallow;
 
 public class ShallowCopyMain {
     public static void main(String[] args)throws Exception{

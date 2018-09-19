@@ -1,4 +1,4 @@
-package edu.wzm.create.prototype.shallow;
+package edu.wzm.creation.prototype.shallow;
 
 public class Resume implements Cloneable {
     private String name;
