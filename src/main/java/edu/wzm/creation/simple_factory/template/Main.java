@@ -1,4 +1,4 @@
-package edu.wzm.create.simple_factory.template;
+package edu.wzm.creation.simple_factory.template;
 
 public class Main {
     public static void main(String[] args){
