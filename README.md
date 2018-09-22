@@ -10,7 +10,7 @@
     6. [原型模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/creation/prototype)
 - 结构型
     1. [代理模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/proxy)
-    2. 适配器模型
+    2. [适配器模型](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/adapter)
     3. [装饰器模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/decorator)
     4. 桥接模式
     5. 组合模式
@@ -53,8 +53,24 @@
 3. **安全代理**：用来控制真实对象访问时的权限。
 4. **智能指引**：是指当调用真实的对象时，代理处理另外一些事。
 
+### 适配器模式
+**适配器模式（Adapter Pattern）**：将一个类的接口，转换成客户期望的另一个接口。适配器让原本接口不兼容的了可以合作无间。
+
+适配器模式分为两种：
+1. 对象适配器：对象适配器使用**组合**实现；
+2. 类适配器：类适配器使用**多重继承**实现。
+
 ### 外观模式
 **外观模式（Facade Pattern）**：提供了一个统一的接口，用来访问子系统中的一群接口。外观定义了一个高层接口，让子系统更容易使用。
+
+适配器模式 | 外观模式
+---|---
+当需要使用一个现有的类而其接口并不符合你的需要时，就使用适配器模式。 | 当需要简化并统一一个很大的接口或者一群复杂的接口时，使用外观模式。
+适配器模式改变接口以符合客户的期望。 | 外观模式将客户从一个复杂的子系统中解耦。
+实现一个适配器可能需要一番功夫，也可能不费功夫，视目标接口的大小与复杂度而定。 | 实现一个外观，需要将子系统组合进外观中，然后将工作委托给子系统执行。
+适配器模式有两种形式：对象适配器和类适配器。类适配器需要用到多重继承。 | 外观模式可以为一个子系统实现一个以上的外观。
+
+**适配器模式将一个对象包装起来以改变其接口；装饰者模式将一个对象包装起来以增加新的行为和责任；外观模式将一群对象包装起来以简化其接口。**
 
 ## 4. 行为型
 ### 策略模式
