@@ -20,7 +20,7 @@
     1. [观察者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/observer)
     2. [模板方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/template_method)
     3. 命令模式
-    4. 状态模式
+    4. [状态模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/state)
     5. 职责链模式
     6. 解释器模式
     7. 中介者模式
@@ -63,8 +63,6 @@
 ### 模板方法模式
 **模板方法模式（Template Method Pattern）**：在一个方法中定义一个算法的骨架，而将一些步骤延迟到子类中。模板方法使得子类可以在不改变算法结构的情况下，重新定义算法中的某些步骤。**模板就是一个方法**。
 
-**模板方法模式 VS 策略模式**
-
 模板方法模式 | 策略模式
 --- | ---
 定义个算法的大纲，而由子类定义其中某些步骤的内容。这样一来算法中的个别步骤可以有不同的实现细节，但是算法的结构依然维持不变。 | 定义一个算法家族，并让这些算法可以互换，因为每个算法都被封装起来了
@@ -73,4 +71,10 @@
   
 ### 观察者模式
 **观察者模式（Observer Pattern）**：也叫**发布-订阅模式（Publish/Subscribe Pattern）**，定义了对象之间的一对多依赖，这样一来，当一个对象改变状态时，它的所有依赖者都会收到通知并自动更新。
+
+### 状态模式
+**状态模式（State Pattern）**：允许对象在内部状态改变时改变它的行为，对象看起来好像修改了它的类。状态模式主要解决的是当控制一个对象状态转换的条件表达式过于复杂时的情况，把状态的判断逻辑转移到表示不同状态的一系列类当中，可以把复杂的判断逻辑简化。
+
+**状态模式 VS 策略模式**：
+1. 
 
