@@ -98,7 +98,7 @@
 
 **备忘录模式类图**：\
 ![img](http://www.runoob.com/wp-content/uploads/2014/08/memento_pattern_uml_diagram.jpg)
-- Originator：负责创建一个备忘录 Memento，用以记录当前时刻它的内部状态，并可使用备忘录恢复内部状态。Originator 可根据需要决定 Memento 存储 Originator 的哪些内部状态。
+- Originator：负责创建一个备忘录 Memento，用以记录当前时刻它的内部状态，并可使用备忘录恢复内部状态。Originator 可根据需要决定 Memento 存储Originator 的哪些内部状态。
 - Memento：负责存储 Originator 对象的内部状态，并可防止 Originator 以外的其他对象访问备忘录 Memento。备忘录有两个接口，Caretaker 只能看到备忘录的窄接口，它只能将备忘录传递给其他对象。Originator 能够看到一个宽接口，允许它访问返回到先前状态所需的所有数据。
 - Caretaker：负责保存好备忘录 Memento，不能对备忘录的内容进行操作或检查。
 
