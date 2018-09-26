@@ -12,7 +12,7 @@
     1. [代理模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/proxy)
     2. [适配器模型](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/adapter)
     3. [装饰器模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/decorator)
-    4. 桥接模式
+    4. [桥接模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/bridge)
     5. [组合模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/composite)
     6. 享元模式
     7. [外观模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/facade)
@@ -76,6 +76,9 @@
 **组合模式（Composite Pattern）**：允许你将对象组合成树形结构来表现“整体/部分”层次结构。组合能让客户以一致的方式处理个别对象以及对象组合。组合模式有两种方式：
 1. 透明方式，就是说在 Component 中声明所有用来管理子对象的方法，其中包括 add()、remove() 等。这样实现 Component 接口的所有子类都具备了 add()、remove()。这样做的好处就是叶节点和枝节点对于外界没有区别，它们具备完全一致的行为接口。但问题也很明显，因为叶节点本身不具备 add()、remove() 方法的功能，所以实现它是没有意义的。
 2. 安全方式，就是说在 Component 接口中不去声明 add()、remove() 方法，那么子类的叶节点也就不需要去实现它，而是在 Composite 声明所有用来管理子类对象的方法，这样做就不会出现透明方式的问题，不过由于不够透明，所以树叶和树枝类将不具备相同的接口，客户端的调用需要做相应的判断，带来了不便。
+
+### 桥接模式
+**桥接模式（Bridge Pattern）**：将抽象部分与它的实现部分分离，使它们都可以独立地变化。
 
 ## 4. 行为型
 ### 策略模式
