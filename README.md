@@ -13,7 +13,7 @@
     2. [适配器模型](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/adapter)
     3. [装饰器模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/decorator)
     4. 桥接模式
-    5. 组合模式
+    5. [组合模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/composite)
     6. 享元模式
     7. [外观模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/structure/facade)
 - 行为型
@@ -27,7 +27,7 @@
     8. 访问者模式
     9. [策略模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/strategy)
     10. [备忘录模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/memento)
-    11. 迭代器模式
+    11. [迭代器模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/iterator)
 
 ## 2. 创建型
 ### 简单工厂模式
@@ -47,7 +47,7 @@
 
 ## 3. 结构型
 ### 1. 代理模式
-**代理模式（Proxy Pattern）** 一般分为几种：
+**代理模式（Proxy Pattern）** ：为另一个对象提供一个替身或占位符以控制对这个对象的访问。代理模式一般分为几种：
 1. **远程代理**：也就是为一个对象在不同的地址空间提供局部代表。这样可以隐藏一个对象存在于不同地址空间的事实。
 2. **虚拟代理**：是根据需要创建开销很大的对象。通过它来存放实例化需要很长时间的真实对象。
 3. **安全代理**：用来控制真实对象访问时的权限。
@@ -71,6 +71,11 @@
 适配器模式有两种形式：对象适配器和类适配器。类适配器需要用到多重继承。 | 外观模式可以为一个子系统实现一个以上的外观。
 
 **适配器模式将一个对象包装起来以改变其接口；装饰者模式将一个对象包装起来以增加新的行为和责任；外观模式将一群对象包装起来以简化其接口。**
+
+### 组合模式
+**组合模式（Composite Pattern）**：允许你将对象组合成树形结构来表现“整体/部分”层次结构。组合能让客户以一致的方式处理个别对象以及对象组合。组合模式有两种方式：
+1. 透明方式，就是说在 Component 中声明所有用来管理子对象的方法，其中包括 add()、remove() 等。这样实现 Component 接口的所有子类都具备了 add()、remove()。这样做的好处就是叶节点和枝节点对于外界没有区别，它们具备完全一致的行为接口。但问题也很明显，因为叶节点本身不具备 add()、remove() 方法的功能，所以实现它是没有意义的。
+2. 安全方式，就是说在 Component 接口中不去声明 add()、remove() 方法，那么子类的叶节点也就不需要去实现它，而是在 Composite 声明所有用来管理子类对象的方法，这样做就不会出现透明方式的问题，不过由于不够透明，所以树叶和树枝类将不具备相同的接口，客户端的调用需要做相应的判断，带来了不便。
 
 ## 4. 行为型
 ### 策略模式
@@ -101,6 +106,11 @@
 - Originator：负责创建一个备忘录 Memento，用以记录当前时刻它的内部状态，并可使用备忘录恢复内部状态。Originator 可根据需要决定 Memento 存储Originator 的哪些内部状态。
 - Memento：负责存储 Originator 对象的内部状态，并可防止 Originator 以外的其他对象访问备忘录 Memento。备忘录有两个接口，Caretaker 只能看到备忘录的窄接口，它只能将备忘录传递给其他对象。Originator 能够看到一个宽接口，允许它访问返回到先前状态所需的所有数据。
 - Caretaker：负责保存好备忘录 Memento，不能对备忘录的内容进行操作或检查。
+
+### 迭代器模式
+**迭代器模式（Iterator Pattern）**：提供一种方法顺序访问一个聚合对象中的各个元素，而又不暴露其内部的表示。
+
+
 
 
 
