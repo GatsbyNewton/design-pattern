@@ -2,6 +2,9 @@ package edu.wzm.action.command.example;
 
 import java.util.List;
 
+/**
+ * 宏命令
+ */
 public class MacroCommand implements Command {
     private List<Command> commands;
 
