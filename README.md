@@ -19,7 +19,7 @@
 - 行为型
     1. [观察者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/observer)
     2. [模板方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/template_method)
-    3. 命令模式
+    3. [命令模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/command)
     4. [状态模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/state)
     5. 职责链模式
     6. 解释器模式
@@ -113,7 +113,17 @@
 ### 迭代器模式
 **迭代器模式（Iterator Pattern）**：提供一种方法顺序访问一个聚合对象中的各个元素，而又不暴露其内部的表示。
 
+### 命令模式
+**命令模式（Command Pattern）**：将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也支持可撤销的操作。
 
+敏捷开发原则告诉我们，不要为代码添加基于猜测的、实际不需要的功能。如果不清楚一个系统是否需要命令模式，一般就不要着急去实现它，事实上，在需要的时候通过重构实现这么模式并不困难，只有在真正需要如撤销、恢复操作等功能时，把原来的代码重构为命令模式才有意义。
+
+命令模式的要点：
+1. 命令模式将发出请求的对象和执行请求的对象解耦；
+2. 在被解耦的两者之间是通过命令对象进行沟通的。命令对象封装了接收者和一个或一组动作；
+3. 命令模式可以支持撤销；
+4. 宏命令是命令的一种简单的延伸，允许调用多个命令。宏方法也可以支持撤销；
+5. 命令模式可以用来实现日志系统和事物系统。
 
 
 
