@@ -21,7 +21,7 @@
     2. [模板方法模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/template_method)
     3. [命令模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/command)
     4. [状态模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/state)
-    5. 职责链模式
+    5. [责任链模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/chain_of_responsibility)
     6. 解释器模式
     7. 中介者模式
     8. 访问者模式
@@ -125,5 +125,6 @@
 4. 宏命令是命令的一种简单的延伸，允许调用多个命令。宏方法也可以支持撤销；
 5. 命令模式可以用来实现日志系统和事物系统。
 
-
+### 责任链模式
+**责任链模式（Chain of Responsibility Pattern）**：使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这个对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止。
 
