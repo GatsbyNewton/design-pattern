@@ -23,7 +23,7 @@
     4. [状态模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/state)
     5. [责任链模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/chain_of_responsibility)
     6. 解释器模式
-    7. 中介者模式
+    7. [中介者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/mediator)
     8. 访问者模式
     9. [策略模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/strategy)
     10. [备忘录模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/memento)
@@ -127,4 +127,21 @@
 
 ### 责任链模式
 **责任链模式（Chain of Responsibility Pattern）**：使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。将这个对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止。
+
+### 中介者模式
+**中介者模式（Mediator Pattern）**：用一个中介对象来封装一系列的对象交互。中介者使各对象不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。
+
+中介者模式的优点：
+1. Mediator 的出现减少了各个 Colleague 的耦合，使得可以独立地改变和复用各个 Colleague 类和 Mediator；
+2. 由于把对象如何协作进行了抽象，将中介作为一个独立的概念并将其封装在一个对象中，这样关注的对象就从对象各自本身的行为转移到它们之间的交互上，也就是站在一个更宏观的角度去看待系统。
+
+中介者模式的缺陷：
+1. 由于 Mediator 控制了集中化，于是就把交互复杂性变为了中介者的复杂性，这就使得中介者会变得比任何一个 Colleague 都复杂。
+
+中介者模式一般应用于一组对象以定义良好但是复杂的方式进行通信的场合，以及想定制一个分布在多个类中的行为，而又不想生成太多的子类的场合。
+
+
+
+
+
 
