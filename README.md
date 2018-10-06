@@ -22,7 +22,7 @@
     3. [命令模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/command)
     4. [状态模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/state)
     5. [责任链模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/chain_of_responsibility)
-    6. 解释器模式
+    6. [解释器模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/interpreter)
     7. [中介者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/mediator)
     8. 访问者模式
     9. [策略模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/strategy)
