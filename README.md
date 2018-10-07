@@ -24,7 +24,7 @@
     5. [责任链模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/chain_of_responsibility)
     6. [解释器模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/interpreter)
     7. [中介者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/mediator)
-    8. 访问者模式
+    8. [访问者模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/visitor)
     9. [策略模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/strategy)
     10. [备忘录模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/memento)
     11. [迭代器模式](https://github.com/GatsbyNewton/design-pattern/tree/master/src/main/java/edu/wzm/action/iterator)
@@ -158,6 +158,7 @@
 
 解释器模式也有不足，解释器模式为文法中的每一条规则至少定义了一个类，因此包含许多规则的文法可能难以管理和维护。建议当文法非常复杂时，使用其他的技术如语法分析程序或编译器生成器来处理。
 
+### 访问者模式
+**访问者模式（Visitor Pattern）**：表示一个作用于某对象结构中的各元素的操作。它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作。
 
-
-
+访问者模式的目的是要把处理从数据结构分离出来。很多系统可以按照算法和数据结构分开，如果这样的系统有比较稳定的数据结构，又有易于变化的算法的话，使用访问者模式就比较合适的，因为访问者模式使得算法操作的增加变得容易。反之，如果这样的系统的数据结构对象易于变化，经常要有新的数据结构对象增加进来，就不合适使用访问者模式。
